@@ -1,0 +1,152 @@
+body{
+    background-color: hsl(47, 37%, 91%);
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+main{
+    margin-top: 80px;
+    background-color: rgb(255, 255, 255);
+    width: 56rem;
+    height: 40rem;
+    border-radius: 30px;
+    border-bottom-right-radius: 200px;
+}
+.top{
+    height: 20%;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.topChildren{
+    margin: 15px;
+    width: 20%;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 2px;
+}
+.topTitles{
+    color: hsl(0, 1%, 44%);
+}
+.inputs{
+    border-radius: 5px;
+    height: 60px;
+    border: 1px solid rgb(164, 164, 164);
+    margin-top: 5px;
+    width: 170px;
+    font-size: 30px;
+}
+.inputs:active{
+    cursor: pointer;
+    border: 1px solid hsl(259, 100%, 65%);
+}
+.inputs::placeholder{
+    font-size: 30px;
+    font-weight: 800;
+}
+.mid{
+    display: flex;
+    align-items: center;
+}
+.mainHor{
+    width: 70%;
+    height: .5px;
+    margin-right: 0;
+    margin-left: 70px;
+    color: rgb(212, 207, 207);
+    opacity: 40%;
+}
+.arrowImg{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 100%;
+    padding: 30px;
+}
+.arrowImg:active{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 8%);
+}
+.bottom{
+    height: 70%;
+    margin-left: 70px;
+}
+.bottomChildren{
+    display: flex;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 110px;
+}
+.nums{
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 15px;
+}
+.errorPresent{
+    color: hsl(0, 100%, 67%);
+}
+.inputError{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    color: hsl(0, 100%, 67%);
+}
+.invisible{
+    visibility: hidden;
+}
+
+@media only screen and (max-width:600px){
+    main{
+        width: 90%;
+        height: 35rem;
+        border-bottom-right-radius: 150px;
+    }
+    .top{
+        width: 100%;
+        margin: 0;
+        margin-top: 6%;
+        display: flex;
+        justify-content: center;
+        height: 25%;
+    }
+    .topChildren{
+        display: flex;
+        flex-direction: column;
+        width: 23%;
+        height: 100%;
+    }
+    .topTitles{
+        margin-left: 5px;
+    }
+    .inputs{
+        width: 100%;
+        height: 70px;
+    }
+    .mid{
+        margin-top: 45px;
+        margin-left: -25px;
+    }
+    .mainHor{
+        width: 80%;
+    }
+    .arrowImg{
+        position: absolute;
+        margin-left: 42%;
+        padding: 20px;
+    }
+    .bottom{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        margin-top: -45px;
+    }
+    .bottomChildren{
+        font-size: 65px;
+        line-height: 80px;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+}
